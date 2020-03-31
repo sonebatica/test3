@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- <link rel="stylesheet" type="text/css" href="../dist/jquery-multi-selection.css" /> -->
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+        <script src="../dist/jquery.multi-selection.v1.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/darkly/bootstrap.min.css">
+        <title>jQuery MultiSelection Dual List Box Examples</title>
+        <style>
+            .jp-multiselect select {max-height: 130px;}
+        </style>
+    </head>
+    <body>
+        <div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/form/Dual-List-Box-Multi-Selection.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+        <div class="container">
+        <h1>jQuery MultiSelection Dual List Box Examples</h1>
+        <!-- 1 -->
+        <h2>A simple list</h2>
+        <div class="jp-multiselect">
+            <div class="from-panel">
+                <select name="from[]" class="form-control" size="8" multiple="multiple">
+                    <option value="1">Item 1</option>
+                    <option value="2">Item 2</option>
+                    <option value="3">Item 3</option>
+                    <option value="4">Item 4</option>
+                    <option value="5">Item 5</option>
+                </select>
+            </div>
+            <div class="move-panel">
+                <button type="button" class="btn-move-all-right btn-primary"></button>
+                <button type="button" class="btn-move-selected-right"></button>
+                <button type="button" class="btn-move-all-left"></button>
+                <button type="button" class="btn-move-selected-left"></button>
+            </div>
+            <div class="to-panel">
+                <select name="to[]" class="form-control" size="8" multiple="multiple">
+                    <option value="6">Item 6</option>
+                    <option value="7">Item 7</option>
+                    <option value="8">Item 8</option>
+                </select>
+            </div>
+            <div class="control-panel">
+                <button type="button" class="btn-delete"></button>
+                <button type="button" class="btn-up"></button>
+                <button type="button" class="btn-down"></button>
+            </div>
+        </div>
+        <script>
+            $(".jp-multiselect").jQueryMultiSelection();
+        </script>
+        <hr />
+        <!-- 2 -->
+        <h2>With dynamic add items</h2>
+        <div id="dynamic-form" class="jp-multiselect">
+            <div class="from-panel">
+                <select name="from[]" class="form-control" size="8" multiple="multiple"></select>
+            </div>
+            <div class="move-panel">
+                <button type="button" class="btn-move-all-right"></button>
+                <button type="button" class="btn-move-selected-right"></button>
+                <button type="button" class="btn-move-all-left"></button>
+                <button type="button" class="btn-move-selected-left"></button>
+            </div>
+            <div class="to-panel">
+                <select name="to[]" class="form-control" size="8" multiple="multiple"></select>
+            </div>
+            <div class="control-panel">
+                <button type="button" class="btn-delete"></button>
+                <button type="button" class="btn-up"></button>
+                <button type="button" class="btn-down"></button>
+            </div>
+            <br />
+            <br />
+            <p><button id="btn-ajax" class="btn btn-primary">Ajax get List</button></p>
+        </div>
+        <script>
+            $("#dynamic-form").jQueryMultiSelection({
+                enableDynamicAddContent : true,
+            });
+        </script>
+
+    </div>
+    </body>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
